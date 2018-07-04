@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eatgo.eatgo.EatGo"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/eatgoTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottombar"/>
+
+    <LinearLayout
+        android:id="@+id/searchTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottombar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/friendsTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottombar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/mypageTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottombar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/moreTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottombar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EFEEEE"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/eatgo"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/holo_red_dark"
+            android:text="먹자GO"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="#575757"
+            android:text="검색"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/friends"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="#575757"
+            android:text="친구"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/mypage"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="#575757"
+            android:text="MY"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/more"
+            android:layout_marginLeft="15dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="#575757"
+            android:text="더 보기"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

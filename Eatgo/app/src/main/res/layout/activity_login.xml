@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark">
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/eatgo_logo_white"
+        android:layout_width="192dp"
+        android:layout_height="117dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="먹자GO"
+        android:textSize="50dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+        <EditText
+            android:layout_marginTop="310dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:ems="8"
+            android:hint="아이디를 입력하세요"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editTextID"
+            android:textSize="19dp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:singleLine="true"
+            android:lines="1"/>
+
+    <EditText
+        android:layout_marginTop="380dp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:ems="8"
+        android:hint="비밀번호를 입력하세요"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:id="@+id/editTextPW"
+        android:textSize="19dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:singleLine="true"
+        android:lines="1"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="450dp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="#E0E0E0"
+        android:text="로그인"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:enabled="false"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="510dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/join"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="#E0E0E0"
+            android:text="회원가입"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/forgotten"
+            android:layout_marginLeft="20dp"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="#E0E0E0"
+            android:text="PW찾기"
+            android:textSize="20dp"
+            android:textColor="#404040"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
